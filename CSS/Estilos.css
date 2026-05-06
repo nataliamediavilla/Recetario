@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --color-white: #fff;
+    --color-dark: #1d1d1d;
+    --color-bg: #ffefef;
+    --color-accent: indianred;
+    --color-accent-light: #774e40;
+    --color-border: indianred;
+
+    --font-serif: "Lora", serif; 
+    --font-sans: "DM Sans", sans-serif;
+
+    --radius: 10px;
+    --gap: 20px;
+    --nav-height: 64px;
+}
+
+* { /* RESET DE LOS PARÁMETROS ESTANDAR*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--color-dark);
+    background-color: var(--color-bg);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--nav-height);
+    padding-inline: 48px;
+
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0,2px;
+    color: var(--color-dark);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.hero {
+    height: 100vh;
+    background-image: 
+       linear-gradient(to bottom, rgba(20,18,15,0.80) 0%, rgba(20,18,15,0.25) 100%),
+       url('https://images.unsplash.com/photo-1653233797467-1a528819fd4f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: var(--color-white);
+    max-width: 640px;
+    padding-inline: 24px;
+}
+
+.hero-eyebrow {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: var(--font-serif);
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.hero h1 em {
+    opacity: 0.8;
+}
+
+.hero-sub {
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.7;
+    margin-bottom: 36px;
+}
+
+.btn-hero {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-weight: 500;
+    transition: all 0.4s;
+}
+
+.btn-hero:hover {
+    background-color: indianred;
+}
+
+.recetas{
+    padding: 80px 24px;
+}
+
+.recetas-inner{
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.recetas h2{
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-accent-light);
+    margin-bottom: 36px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+
+
+.card{
+    background-color: var(--color-white);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.5s;
+}
+
+.card:hover{
+    box-shadow: 0 12px 32px rgba(0,0,0,0.10);
+}
+
+
+
+
+.card-img{
+    overflow: hidden;
+    height: 180px;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.card:hover .card-img img{
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+.card-content{
+    padding: 18px 20px;
+}
+
+
+.card-tag{
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    background-color: var(--color-accent);
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card h3{
+    font-family: var(--font-serif);
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.card .autor{
+    font-size: 12px;
+    color: var(--color-accent);
+    margin-bottom: 12px;
+}
+
+.card-link{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/*DISEÑO DE FORMULARIO*/
+
+.formulario{
+    background-color: #fff;
+    border-top: 1px solid var(--color-accent);
+    border-bottom: 1px solid var(--color-accent);
+    padding: 80px 24px;
+}
+
+.formulario-inner{
+    max-width: 640px;
+    margin-inline: auto;
+}
+
+.formulario h2{
+    font-size: 28px;
+    font-family: var(--font-serif);
+    color: var(--color-accent);
+    margin-bottom: 10px;
+}
+
+.formulario p{
+    color: var(--color-accent-light);
+    margin-bottom: 36px;
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.form-grid label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-dark);
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.form-grid input,
+.form-grid select,
+.form-grid textarea {
+    width: 100% !important;
+    padding: 11px 14px;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-bg);
+    font-size: 14px;
+    border-radius: 8px;
+    font-family: var(--font-sans);
+
+    /*que solo se pueda redimensionar la caja hacia abajo*/
+    resize: vertical;
+
+    /*que no cargue el estilo predeterminado del navegador*/
+    appearance: none;
+}
+
+.form-full{
+    grid-column: span 2;
+}
+
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    padding: 13px 32px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*ADAPTAR LAS COLUMNAS DEL GRID A DIFERENTES TAMAÑOS DE PANTALLA*/
+
+@media (max-width: 768px){ /*TABLET*/
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 450px){ /*MOVIL*/
+
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
