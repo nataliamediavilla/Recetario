@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetario de la Clase de Diseño Gráfico</title>
+    <link rel="stylesheet" href="CSS/Estilos.css">
+    <link rel="icon" type="image/png" href="">
+
+</head>
+
+<body>
+
+    <header>
+
+        <a class="logo" href="#top">Recetario de clase</a>
+
+        <nav>
+            <ul>
+                <li><a href="#recetas">Recetas</a></li>
+                <li><a href="#enviar">Enviar</a></li>
+                <li><a href="#footer">Contacto</a></li>
+
+                <li><a href="#enviar">+ Añadir receta</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="top" class="hero">
+
+            <div class="hero-content">
+                <p class="hero-eyebrow">Curso 2026 · Hacer Creativo</p>
+                <h1>El recetario de <em>Diseño Gráfico</em></h1>
+                <p class="hero-sub">Cocinando con código</p>
+
+                <a href="#recetas" class="btn-hero">Ver recetas ↓</a>
+
+            </div>
+
+        </section>
+
+        <!--TARJETAS RECETAS-->
+
+        <section id="recetas" class="recetas">
+
+            <div class="recetas-inner">
+
+                <h2>Recetas de los alumnos</h2>
+
+                <div class="grid">
+
+                     <!--Card 01-->
+                      
+                    <a href="recetas/ensalada_cesar.html" class="card">
+
+                        <div class="card-img">
+                            <img src="img/ensalada_cesar.avif" alt="Imagen de una ensalada Cesar">
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-tag">Entrante</span>
+                            <h3>Ensalada César</h3>
+                            <p class="autor">Diego Vinué</p>
+                            <span class="card-link">Ver receta</span>
+                        </div>
+
+                    </a>
+
+                    <!--Card 02-->
+                      
+                    <a href="recetas/tarta_tatin.html" class="card">
+
+                        <div class="card-img">
+                            <img src="img/tarta_tatin.jpg" alt="Imagen de una tarta tatin">
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-tag">Postre</span>
+                            <h3>Tarta Tatin</h3>
+                            <p class="autor">Donna Otavalo</p>
+                            <span class="card-link">Ver receta</span>
+                        </div>
+
+                    </a>
+
+                    <!--Card 03-->
+                      
+                    <a href="recetas/pizza.html" class="card">
+
+                        <div class="card-img">
+                            <img src="img/pizza.webp" alt="Imagen de una pizza">
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-tag">Principal</span>
+                            <h3>Pizza</h3>
+                            <p class="autor">Carlota Abril</p>
+                            <span class="card-link">Ver receta</span>
+                        </div>
+
+                    </a>
+
+                    <!--Card 04-->
+                      
+                    <a href="recetas/ramen.html" class="card">
+
+                        <div class="card-img">
+                            <img src="img/ramen.avif" alt="Imagen de un ramen">
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-tag">Principal</span>
+                            <h3>Ramen</h3>
+                            <p class="autor">Rafael Palacios</p>
+                            <span class="card-link">Ver receta</span>
+                        </div>
+
+                    </a>
+
+                    <!--Card 05-->
+                      
+                    <a href="recetas/pepito de ternera.html" class="card">
+
+                        <div class="card-img">
+                            <img src="img/pepito-de-ternera.jpg" alt="Imagen de un pepito de ternera">
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-tag">Principal</span>
+                            <h3>Pepito de ternera</h3>
+                            <p class="autor">Alejandra Soriano</p>
+                            <span class="card-link">Ver receta</span>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--FORMULARIO-->
+
+        <section class="formulario" id="enviar">
+
+            <div class="formulario-inner">
+
+                <h2>¿Tienes una receta secreta?</h2>
+                <p>Mándanosla y la añadimos al recetario.</p>
+
+                <form>
+
+                    <div class="form-grid">
+
+                        <div>
+                            <label for="nombre">Tu nombre</label>
+                            <input id="nombre" type="text" placeholder="Ej: Natalia Mediavilla">
+                        </div>
+
+                        <div>
+                            <label for="receta">Nombre de la receta</label>
+                            <input id="receta" type="text" placeholder="Ej: Croquetas de jamón">
+                        </div>
+
+                        <div>
+                            <label for="categoria">Categoría</label>
+                            <select id="categoria">
+                                <option>Entrante</option>
+                                <option>Principal</option>
+                                <option>Postre</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="tiempo">Tiempo de preparación</label>
+                            <input id="tiempo" type="text" placeholder="Ej: 30 minutos">
+                        </div>
+
+                        <div class="form-full">
+                            <label for="descripcion">Ingredientes y pasos</label>
+                            <textarea id="descripcion" rows="5" placeholder="Cuéntanos cómo lo haces..."></textarea>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn">Enviar receta</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
